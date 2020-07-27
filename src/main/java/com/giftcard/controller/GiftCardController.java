@@ -55,24 +55,7 @@ public class GiftCardController {
 	@GetMapping(value = "/viewAllOrders")
 	public ResponseEntity<List<GiftCardOrderDetailsDTO>> viewAllOrders() {
 		return null;
-		/*GiftCardOrderDetailsDTO orderDetails = new GiftCardOrderDetailsDTO();
-		orderDetails.setOrderId("1");
-		orderDetails.setBuyerFirstName("buyerFirstName");
-		orderDetails.setBuyerLastName("buyerLastName");
-		orderDetails.setEmail("email@gmail.com");
-		Long amount = 100L;
 		
-		orderDetails.setGiftAmount(amount);
-		orderDetails.setPhoneNumber("999999999");
-		orderDetails.setRecipientLastName("recepientName");
-		orderDetails.setRecipientFirstName("recipientFirstName");
-		
-		List<GiftCardOrderDetailsDTO> list = new ArrayList<GiftCardOrderDetailsDTO>();
-		list.add(orderDetails);
-		ResponseEntity<List<GiftCardOrderDetailsDTO>> response = 
-				new ResponseEntity<List<GiftCardOrderDetailsDTO>>(list,HttpStatus.OK);
-		return response;
-		*/
 	}
 	
 	@DeleteMapping(value = "/deleteGiftCards/{giftCardId}")
